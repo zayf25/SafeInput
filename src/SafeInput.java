@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.regex.Pattern;
+import java.util.Scanner;
+
 
 
 public class SafeInput {
@@ -217,5 +219,9 @@ public class SafeInput {
             System.out.print("*");
         }
         System.out.println();
+
+        Scanner in = new Scanner(System.in);
+        int userValToCount = SafeInput.getRangedInt(in, "Enter a value to COUNT in the array", 1, 100);
+
     }
 }
